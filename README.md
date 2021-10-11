@@ -7,7 +7,7 @@
   <img src="https://github-readme-stats.vercel.app/api/pin/?username=Caliph71&repo=bot-wa&theme=tokyonight" />
 </p>
 <p align="center">
-<a href="https://github.com/caliph71"><img src="https://img.shields.io/badge/Author-Caliph-red.svg?style=for-the-badge&logo=github"/><a/>
+<a href="//github.com/caliph91"><img src="https://img.shields.io/badge/Author-Caliph-red.svg?style=for-the-badge&logo=github"/><a/>
 </p>
 <p align="center">
 <a href="https://javascript.com"><img src="https://img.shields.io/badge/Made%20With-javascript-cyan.svg?style=for-the-badge&logo=javascript"/><a/>
@@ -18,8 +18,8 @@
 * Termux
 ```
 > pkg install git
-> git clone https://github.com/caliph71/bot-wa
-> cd bot-wa
+> git clone https://github.com/caliph91/bot-whatsapp
+> cd bot-whatsapp
 > bash install.sh
 > node index
 ```
