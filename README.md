@@ -4,7 +4,7 @@
 
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Caliph71&repo=bot-wa&theme=tokyonight" />
+  <img src="https://github-readme-stats.vercel.app/api/pin/?username=Caliph91&repo=bot-whatsapp&theme=tokyonight" />
 </p>
 <p align="center">
 <a href="//github.com/caliph91"><img src="https://img.shields.io/badge/Author-Caliph-red.svg?style=for-the-badge&logo=github"/><a/>
