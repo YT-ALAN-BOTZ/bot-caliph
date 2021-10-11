@@ -180,7 +180,7 @@ caliph.sendMessage(m.chat, { url: data.result.male }, 'imageMessage', { quoted: 
 caliph.sendMessage(m.chat, { url: data.result.female }, 'imageMessage', { quoted: m })
 break
 case prefix+'katabijak': 
-data = await getText('https://raw.githubusercontent.com/Caliph71/txt/main/katabijak.txt')
+data = await getText('https://raw.githubusercontent.com/Caliph91/txt/main/katabijak.txt')
 array = data.split('\n')
 random = array[Math.floor(Math.random() * array.length)]
 m.reply(random)
@@ -233,13 +233,13 @@ var random = array_dadu[Math.floor(Math.random() * array_dadu.length)]
 caliph.sendMessage(m.chat, { url: random }, mType.sticker, { quoted: m })
 break
 case prefix+'dare': 
-data = await getJson('https://raw.githubusercontent.com/Caliph71/txt/main/dare.json')
+data = await getJson('https://raw.githubusercontent.com/Caliph91/txt/main/dare.json')
 array = data
 random = array[Math.floor(Math.random() * array.length)]
 m.reply(random)
 break
 case prefix+'truth': 
-data = await getJson('https://raw.githubusercontent.com/Caliph71/txt/main/truth.json')
+data = await getJson('https://raw.githubusercontent.com/Caliph91/txt/main/truth.json')
 array = data
 random = array[Math.floor(Math.random() * array.length)]
 m.reply(random)
