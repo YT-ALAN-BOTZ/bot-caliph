@@ -68,9 +68,9 @@ case prefix+'help': case prefix+'menu':
 caliph.updatePresence(m.chat, 'composing')
 caliph.reply(m.chat, `*WHATSAPP BOT*
 
-Source code : https://github.com/caliph71/bot-wa
-Author : @caliph71
-lib : Baileys
+Source code : https://github.com/caliph91/bot-whatsapp
+Author : @caliph91
+Lib : Baileys
 Battery : ${caliph.battery ? caliph.battery.value +'%' : 'Belum kedetect'} ${caliph.battery ? caliph.battery.live ? '🔌 Charging...' : '⚡ Discharging' : ''}
 
 Group Menu
