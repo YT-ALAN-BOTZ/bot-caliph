@@ -66,7 +66,7 @@ return {key:{ fromMe:false, participant: `0@s.whatsapp.net`, ...(m.chat ? { remo
 						 switch(command) {
 case prefix+'help': case prefix+'menu':
 caliph.updatePresence(m.chat, 'composing')
-caliph.reply(m.chat, `*WHATSAPP BOT*
+var menu = `*WHATSAPP BOT*
 
 Source code : https://clph.pw/m9oU
 Author : @caliph91
@@ -129,7 +129,9 @@ Random Menu
 - ${prefix}truth
 - ${prefix}dadu 
 - ${prefix}lolivid
-`.trim(), freply('Rikka-Botz WhatsApp', fs.readFileSync(global.thumb)), { detectLinks: false })
+`.trim()
+var img = fs.readFileSync(global.thumb)
+caliph.sendMessage(m.chat, img, mType.image, { quoted: freply('Rikka-Botz WhatsApp', img), caption: menu })
 break
 case prefix+'lolivid':
 case prefix+'asupanloli':
