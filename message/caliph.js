@@ -145,6 +145,16 @@ m.reply(`_*Tunggu permintaan anda sedang diproses..*_`)
 var url = global.API('caliphAPI', '/waifu', {}, 'apikey')
 caliph.sendMessage(m.chat, { url }, mType.image, { quoted: m , caption: 'Larii Ada Wibu...'})
 break
+case prefix+'public':
+if (!isOwner) throw `Perintah Ini Khusus Owner Bot!`
+global.selfmode = false
+m.reply(`\`\`\`STATUS : PUBLIC\`\`\``)
+break
+case prefix+'self':
+if (!isOwner) throw `Perintah Ini Khusus Owner Bot!`
+global.selfmode = true
+m.reply(`\`\`\`STATUS : SELF\`\`\``)
+break
 case prefix+'loli':
 m.reply(`_*Tunggu permintaan anda sedang diproses..*_`)
 var url = global.API('caliphAPI', '/loli', {}, 'apikey')
