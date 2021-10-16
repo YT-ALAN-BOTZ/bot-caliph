@@ -170,6 +170,29 @@ fs.unlinkSync(media)
 fs.unlinkSync(`./tmp/${det}.mp3`)
 })
 break
+case prefix+'calc':
+caliph.updatePresence(m.chat, 'composing')
+if (!text) return m.reply(`Teksnya Mana ajg!!!`)
+var val = text
+
+    .replace(/[^0-9\-\/+*×÷πEe()piPI/]/g, '')
+    .replace(/×/g, '*')
+    .replace(/÷/g, '/')
+    .replace(/π|pi/gi, 'Math.PI')
+    .replace(/e/gi, 'Math.E')
+    .replace(/\/+/g, '/')
+    .replace(/\++/g, '+')
+    .replace(/-+/g, '-')
+ var formats = val
+    .replace(/Math\.PI/g, 'π')
+    .replace(/Math\.E/g, 'e')
+    .replace(/\//g, '÷')
+    .replace(/\*×/g, '×')
+
+result = require('mathjs').evaluate(val)
+
+m.reply(`_${formats}_ = ${result}`)
+break
 case prefix+'ping': 
 old = new Date
 await m.reply(`Testing ping...`)
