@@ -1,7 +1,7 @@
 let fs = require('fs')
 let chalk = require('chalk')
 global.owner = ['380944182435', '436504463151111']
-global.autoread = true
+global.autoread = false
 global.selfmode = false
 global.thumb = './thumb/itsuki.jpg'
 global.fakereplyt = 'Rikka-Botz WhatsApp'
