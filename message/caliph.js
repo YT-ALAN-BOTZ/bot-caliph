@@ -368,14 +368,11 @@ caliph.groupRemove(m.chat, [a]).catch(() => m.reply('Gagal!'))
 break
 case prefix+'bcgc': 
 if (!isOwner) return m.reply('Perintah ini khusus Owner bot!')
-if (!args[0]) return m.reply('......')
-caliph.chats.array.filter(y => y.jid.endsWith('g.us')).map(a => {
-switch(m.mtype) {
-case 'conversation':
-case 'extendedTextMessage':
-caliph.reply(a.jid, args.join(' '))
-}
-})
+if (!args[0]) return m.reply('Teksnya mana amsu!')
+var chats = caliph.chats.all().filter(v => v.jid.endsWith('g.us')).map(v => v.jid)
+  var content = await caliph.cMod(m.chat, m, /bc|broadcast/i.test(text) ? text : text + '\n' + readMore + '*「 BROADCAST 」*')
+  for (let id of chats) await caliph.copyNForward(id, content, true)
+  caliph.reply(m.chat, `_Mengirim pesan broadcast ke ${chats.length} group_`, m)
 break
 case prefix+'promote': 
 if (!m.isGroup) return m.reply('Perintah ini khusus didalam grup!')
