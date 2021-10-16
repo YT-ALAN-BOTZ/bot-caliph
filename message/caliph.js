@@ -92,6 +92,8 @@ Owner Menu
 - ${prefix}join linkgroup
 - > JavaScript Code
 - => JavaScript Code
+- ${prefix}public
+- ${prefix}self
 
 Other Menu
 - ${prefix}toimg (reply sticker)
