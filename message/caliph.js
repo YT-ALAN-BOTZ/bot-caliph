@@ -113,6 +113,7 @@ Education Menu
 - ${prefix}brainly (pertanyaan)
 - ${prefix}wiki (query)
 - ${prefix}wikipedia (query)
+- ${prefix}calc 10-3
 
 Convert Menu 
 - ${prefix}tomp3 (Reply/Kirim Video)
