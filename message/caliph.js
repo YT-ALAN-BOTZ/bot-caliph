@@ -354,7 +354,7 @@ m.reply(util.format(e))
 break
 case prefix+'sc': 
 case prefix+'script':
-m.reply(`Bot ini menggunakan script :\nhttps://github.com/caliph71/bot-wa`)
+m.reply(`Bot ini menggunakan script :\nhttps://github.com/caliph91/bot-whatsapp`)
 break
 case prefix+'kick': 
 if (!m.isGroup) return m.reply('Perintah ini khusus didalam grup!')
@@ -655,6 +655,7 @@ caliph.sendContactArray(m.chat, owner.map(a => a + '@s.whatsapp.net'),{ quoted: 
 break
 case '$':
 if (!text) return
+if (!isOwner) throw `Perintah Ini Khusus Owner Bot Ya ajg!!!!`
 m.reply('```Executing...```')
 exec(text, async (e, q, s) => {
 if (e) return m.reply(util.format(e), null, { detectLinks: false })
