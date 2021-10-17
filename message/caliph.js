@@ -504,12 +504,12 @@ footerText: `🔰 ${caliph.user.name} By Caliph71🔰`,
 const sendMsg = await caliph.prepareMessageFromContent(m.chat,{buttonsMessage},{ contextInfo: { mentionedJid: [] }, sendEphemeral: true})
 
 caliph.relayWAMessage(sendMsg)
-} else if (args[0].toLowerCase() == 'enable') {
+} else if (/on|enable/gi.test(args[0])) {
 if (welcome.includes(m.chat)) return m.reply('Welcome Telah Diaktifkan Sebelumnya')
 welcome.push(m.chat) 
 fs.writeFileSync('./database/chat/welcome.json', JSON.stringify(welcome, null, 2))
 m.reply('Sukses mengaktifkan welcome di grup ini....')
-} else if (args[0].toLowerCase() == 'disable') {
+} else if (/off|disable/gi.test(args[0])) {
 index = welcome.indexOf(m.chat)
 welcome.splice(index, 1) 
 m.reply('Sukses menonaktifkan welcome di grup ini....')
@@ -534,12 +534,12 @@ footerText: `🔰 ${caliph.user.name} By Caliph71🔰`,
 const sendMsg = await caliph.prepareMessageFromContent(m.chat,{buttonsMessage},{ contextInfo: { mentionedJid: [] }, sendEphemeral: true})
 
 caliph.relayWAMessage(sendMsg)
-} else if (args[0].toLowerCase() == 'enable') {
+} else if (/on|enable/gi.test(args[0])) {
 if (left.includes(m.chat)) return m.reply('Left Telah Diaktifkan Sebelumnya')
 left.push(m.chat) 
 fs.writeFileSync('./database/chat/left.json', JSON.stringify(left, null, 2))
 m.reply('Sukses mengaktifkan left di grup ini....')
-} else if (args[0].toLowerCase() == 'disable') {
+} else if (/off|disable/gi.test(args[0])) {
 index = left.indexOf(m.chat)
 left.splice(index, 1) 
 m.reply('Sukses menonaktifkan welcome di grup ini....')
