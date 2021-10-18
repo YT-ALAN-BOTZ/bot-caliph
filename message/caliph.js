@@ -132,6 +132,7 @@ Random Menu
 - ${prefix}truth
 - ${prefix}dadu 
 - ${prefix}lolivid
+
 `.trim()
 var img = fs.readFileSync(global.thumb)
 caliph.sendMessage(m.chat, img, mType.image, { quoted: freply('Rikka-Botz WhatsApp', img), caption: menu })
